@@ -6,18 +6,24 @@ services:
     container_name: consul_server_01
     hostname: consul_server_01
     command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./servers/server_01:/etc/consul.d
 
   consul_server_02:
     image: consul:1.10.0
     container_name: consul_server_02
     hostname: consul_server_02
     command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./servers/server_02:/etc/consul.d
 
   consul_server_03:
     image: consul:1.10.0
     container_name: consul_server_03
     hostname: consul_server_03
     command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./servers/server_03:/etc/consul.d
 
   consul_client_01:
     image: consul:1.10.0

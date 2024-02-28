@@ -9,7 +9,7 @@
       "name": "HTTP check",
       "http": "http://localhost",
       "interval": "10s",
-      "timeout": "2s"
+      "timeout": "5s"
     }
   }
 }
