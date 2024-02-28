@@ -3,5 +3,7 @@
   "bind_addr": "172.20.0.6",
   "bootstrap_expect": 3,
   "data_dir": "/tmp",
-  "retry_join": ["172.20.0.5", "172.20.0.2"]
+  "retry_join": ["172.20.0.5"],
+  "node_name": "server_02",
+  "encrypt": "T96FQdxIEb6eFQvripMvoTz+QvwU1GCqZDBzG9xl7sg="
 }
