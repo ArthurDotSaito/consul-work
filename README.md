@@ -9,7 +9,7 @@ A brief consul PoC
 Open a terminal and type the command below to build docker:
 
 ```
-docker_compose up -d
+docker-compose up -d
 ```
 
 Then, in another terminal, type the command below to build server_01:
