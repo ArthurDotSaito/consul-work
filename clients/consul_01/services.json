@@ -3,6 +3,13 @@
     "id": "ngnix",
     "name": "Ngnix",
     "tags": ["ngnix", "web"],
-    "port": 80
+    "port": 80,
+    "check": {
+      "id": "ngnix",
+      "name": "HTTP check",
+      "http": "http://localhost",
+      "interval": "10s",
+      "timeout": "2s"
+    }
   }
 }
